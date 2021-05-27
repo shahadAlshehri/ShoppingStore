@@ -1,0 +1,27 @@
+﻿@{
+    var Product = (ProductModel)ViewData["products"];
+
+}
+<table class="table table-hover" style="background-color:white; box-shadow: 3px 5px #7c9473; ">
+    <thead>
+        <tr>
+            <th scope="col"style="color: #064420; font-size:40px">Product</th>
+            <th scope="col"style="color: #064420; font-size:40px">Price</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+            <tr>
+               
+                <td style="color: #064420; font-size: 30px "> @Product.Name </td>
+                <td style=" color: #064420;font-size:30px">@Product.price SR</td>
+                <td><img style="width:300px; height:300px" src=@Product.Image alt="@Product.Image " /></td>
+            </tr>
+
+       
+
+
+    </tbody>
+
+</table>
